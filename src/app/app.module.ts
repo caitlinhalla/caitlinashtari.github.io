@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IndexComponent } from './index/index.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
