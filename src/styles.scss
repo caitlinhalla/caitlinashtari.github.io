@@ -6,14 +6,26 @@
   flex: 1 1 auto;
 }
 
+.navLink {
+  padding: 10px;
+  :hover, :active, :visited {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+#contactContainer {
+  text-align: center;
+}
+
 // hue.
-$candy-app-primary: md-palette($md-indigo);
-$candy-app-accent:  md-palette($md-pink, A200, A100, A400);
+$app-primary: md-palette($md-indigo);
+$app-accent:  md-palette($md-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$candy-app-warn:    md-palette($md-red);
+$app-warn:    md-palette($md-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$candy-app-theme: md-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+$app-theme: md-light-theme($app-primary, $app-accent, $app-warn);
 
-@include angular-material-theme($candy-app-theme);
+@include angular-material-theme($app-theme);

@@ -1,0 +1,8 @@
+<md-card>
+  <md-card-title><img src="{{(projectToDisplay | async)?.image}}"></md-card-title>
+  <md-card-content>
+    <p>{{(projectToDisplay | async)?.title}}</p>
+    <p>{{(projectToDisplay | async)?.description}}</p>
+    <p>{{(projectToDisplay | async)?.language}}</p>
+  </md-card-content>
+</md-card>

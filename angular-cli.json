@@ -23,7 +23,7 @@
       ],
       "scripts": [
         "../bower_components/jquery/dist/jquery.min.js",
-        "assests/js/scripts.js"
+        "assets/js/scripts.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
