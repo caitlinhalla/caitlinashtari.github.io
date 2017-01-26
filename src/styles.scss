@@ -1,6 +1,10 @@
-@import '~@angular/material/core/theming/all-theme';
+$white: #fff;
+$black: #000;
 
-@include md-core();
+// navbar
+.navBar{
+  background: transparentize($white, 1);
+}
 
 .example-fill-remaining-space {
   flex: 1 1 auto;
@@ -10,22 +14,22 @@
   padding: 10px;
   :hover, :active, :visited {
     text-decoration: none;
-    color: white;
+    color: black;
   }
 }
+
+// headers
+
+h1 {
+  text-align: center;
+}
+
 
 #contactContainer {
   text-align: center;
 }
 
-// hue.
-$app-primary: md-palette($md-indigo);
-$app-accent:  md-palette($md-pink, A200, A100, A400);
-
-// The warn palette is optional (defaults to red).
-$app-warn:    md-palette($md-red);
-
-// Create the theme object (a Sass map containing all of the palettes).
-$app-theme: md-light-theme($app-primary, $app-accent, $app-warn);
-
-@include angular-material-theme($app-theme);
+// footer
+.footer {
+  text-align: center;
+}

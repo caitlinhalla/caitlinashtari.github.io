@@ -19,6 +19,7 @@
       "mobile": false,
       "styles": [
         "../bower_components/bootstrap/dist/css/bootstrap.css",
+        "material2-app-theme.scss",
         "styles.scss"
       ],
       "scripts": [
