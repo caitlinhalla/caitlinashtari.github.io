@@ -2,6 +2,10 @@
 
 @include md-core();
 
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
 // hue.
 $candy-app-primary: md-palette($md-indigo);
 $candy-app-accent:  md-palette($md-pink, A200, A100, A400);
