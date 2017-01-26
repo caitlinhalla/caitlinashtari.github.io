@@ -3,6 +3,7 @@ import {FirebaseListObservable} from "angularfire2";
 import { ProjectService } from '../project.service'
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'project-list',
   templateUrl: './project-list.component.html',
@@ -10,6 +11,7 @@ import { Router } from '@angular/router';
   providers: [ProjectService]
 })
 export class ProjectListComponent implements OnInit {
+
   projects: FirebaseListObservable<any[]>;
   constructor(private router: Router, private projectsService: ProjectService) { }
 

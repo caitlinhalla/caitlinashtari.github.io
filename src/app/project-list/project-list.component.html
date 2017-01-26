@@ -1,3 +1,14 @@
 <md-card *ngFor="let project of projects | async " (click)="goToDetailPage(project)">
-  <md-card-title>{{project.title}}</md-card-title>
+   <img md-card-image src="{{project.image}}">
+   <md-card-content>
+      <h3>{{project.title}}</h3>
+      <p>{{project.description}}</p>
+      <p>{{project.languages}}</p>
+   </md-card-content>
 </md-card>
+
+<!-- <div class="flex-container" fxLayout="row" fxLayoutAlign="center center">
+  <div class="flex-item" fxFlex="20%"> hello </div>
+  <div class="flex-item" fxFlex>    hi    </div>
+  <div class="flex-item" fxFlex="25px"> </div>
+</div> -->
