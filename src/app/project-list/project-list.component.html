@@ -1,0 +1,8 @@
+<md-card *ngFor="let project of projects | async ">
+  <md-card-title>{{project.title}}</md-card-title>
+  <md-card-content>
+    <p>{{project.description}}</p>
+    <p>{{project.image}}</p>
+    <p>{{project.languages}}</p>
+  </md-card-content>
+</md-card>

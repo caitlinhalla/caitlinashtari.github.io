@@ -1,0 +1,18 @@
+{
+  "projects": [{
+    "title": "Name 1",
+    "description": "Description 1",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ruby-logo-notext.png",
+    "languages": "language x"
+  }, {
+    "title": "Name 2",
+    "description": "Description 2",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ruby-logo-notext.png",
+    "languages": "language y"
+  }, {
+    "title": "Name 3",
+    "description": "Description 3",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ruby-logo-notext.png",
+    "languages": "language z"
+  }]
+}
