@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   providers: [ProjectService]
 })
 export class ProjectListComponent implements OnInit {
-
+  stringy: string;
   projects: FirebaseListObservable<any[]>;
   constructor(private router: Router, private projectsService: ProjectService) { }
 

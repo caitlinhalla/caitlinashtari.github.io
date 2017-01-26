@@ -1,4 +1,4 @@
-<md-card *ngFor="let project of projects | async " (click)="goToDetailPage(project)">
+<md-card *ngFor="let project of projects | async | language"  (click)="goToDetailPage(project)">
    <img md-card-image src="{{project.image}}">
    <md-card-content>
       <h3>{{project.title}}</h3>

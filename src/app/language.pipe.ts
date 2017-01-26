@@ -9,12 +9,16 @@ export class LanguagePipe implements PipeTransform {
 
   transform(input: Project[]) {
     var output: Project[] = [];
-    for(var i = 0; i < input.length; i++){
-      if (input[i].languages[0] === "ruby" ) {
-        output.push(input[i]);
+    if(input){
+      for(var i = 0; i < 3; i++){
+        if (input[i].languages[0] === "ruby" ) {
+          output.push(input[i]);
+        }
       }
+      return output;
+
     }
-    return output;
+
   }
 
 }
