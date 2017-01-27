@@ -7,17 +7,28 @@ import { Project } from './project.model';
 })
 export class LanguagePipe implements PipeTransform {
 
-  transform(input: Project[]) {
+  transform(input: Project[], desiredLanguage) {
     var output: Project[] = [];
-    if(input){
-      for(var i = 0; i < 3; i++){
+    if(desiredLanguage === "rubyProjects"){
+      for(var i = 0; i < input.length; i++){
         if (input[i].languages[0] === "ruby" ) {
           output.push(input[i]);
         }
       }
       return output;
-
+    } else if (desiredLanguage === "javaScriptProjects"){
+      for(var i = 0; i < input.length; i++){
+        if(input[i].languages[0] === "javascript"){
+          output.push(input[i]);
+        }
+      }
+      return output;
+    } else {
+      return input;
     }
+
+
+
 
   }
 

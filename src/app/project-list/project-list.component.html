@@ -1,4 +1,10 @@
-<md-card *ngFor="let project of projects | async | language"  (click)="goToDetailPage(project)">
+<select (change)="onChange($event.target.value)">
+  <option value="allProjects" selected="selected">All Projects</option>
+  <option value="rubyProjects">Ruby Projects</option>
+  <option value="javaScriptProjects">JavaScript Projects</option>
+</select>
+
+<md-card *ngFor="let project of projects | async | language:filterByLanguage"  (click)="goToDetailPage(project)">
    <img md-card-image src="{{project.image}}">
    <md-card-content>
       <h3>{{project.title}}</h3>

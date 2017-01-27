@@ -13,10 +13,16 @@ import { Router } from '@angular/router';
 export class ProjectListComponent implements OnInit {
   stringy: string;
   projects: FirebaseListObservable<any[]>;
+  filterByLanguage: string = "allProjects";
+
   constructor(private router: Router, private projectsService: ProjectService) { }
 
   ngOnInit() {
     this.projects = this.projectsService.getProjects();
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByLanguage = optionFromMenu;
   }
 
   goToDetailPage(clickedProject){
