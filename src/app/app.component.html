@@ -1,18 +1,22 @@
-<md-toolbar class="navBar">
-  <span class="navLink"><a routerLink="/">Caitlin Ashtari</a></span>
-  <span class="example-fill-remaining-space"></span>
-  <span class="navLink"><a routerLink="about">About</a></span>
-  <span class="navLink"><a routerLink="project-list">Projects</a></span>
-  <span class="navLink"><a routerLink="contact">Contact</a></span>
-</md-toolbar>
+<nav>
+  <div class="nav-wrapper">
+    <a routerLink="/" class="brand-logo">Caitlin Ashtari</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="project-list">Projects</a></li>
+      <li><a routerLink="contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div class="app-content">
+
+<div class="container">
   <router-outlet></router-outlet>
 </div>
 
 
 <footer class="footer">
   <div class="container">
-    <a class="text-muted">Copyright &copy; Caitlin Ashtari 2017</a>
+    <a class="text-muted">Copyright &copy; Caitlin Ashtari <span id="year"></span></a>
   </div>
 </footer>

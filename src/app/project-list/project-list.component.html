@@ -4,17 +4,17 @@
   <option value="javaScriptProjects">JavaScript Projects</option>
 </select>
 
-<md-card *ngFor="let project of projects | async | language:filterByLanguage"  (click)="goToDetailPage(project)">
-   <img md-card-image src="{{project.image}}">
-   <md-card-content>
-      <h3>{{project.title}}</h3>
-      <p>{{project.description}}</p>
-      <p>{{project.languages}}</p>
-   </md-card-content>
-</md-card>
-
-<!-- <div class="flex-container" fxLayout="row" fxLayoutAlign="center center">
-  <div class="flex-item" fxFlex="20%"> hello </div>
-  <div class="flex-item" fxFlex>    hi    </div>
-  <div class="flex-item" fxFlex="25px"> </div>
-</div> -->
+<div class="row" *ngFor="let project of projects | async | language:filterByLanguage"  (click)="goToDetailPage(project)">
+  <div class="col s12 m7">
+    <div class="card">
+      <div class="card-image">
+        <img src="{{project.image}}">
+        <span class="card-title">{{project.title}}</span>
+      </div>
+      <div class="card-content">
+        <p>{{project.description}}</p>
+        <p>{{project.languages}}</p>
+      </div>
+    </div>
+  </div>
+</div>
