@@ -4,7 +4,7 @@
   <option value="javaScriptProjects">JavaScript Projects</option>
 </select>
 
-<div class="row" *ngFor="let project of projects | async | language:filterByLanguage"  (click)="goToDetailPage(project)">
+<div class="row projectList" *ngFor="let project of projects | async | language:filterByLanguage"  (click)="goToDetailPage(project)">
   <div class="col s12 m7">
     <div class="card">
       <div class="card-image">
