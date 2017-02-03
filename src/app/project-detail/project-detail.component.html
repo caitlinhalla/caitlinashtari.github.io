@@ -1,17 +1,17 @@
 <div class="row project">
-  <div class="col s12 m7">
-    <div class="card">
+  <div class="col s12">
+    <div class="card detail">
       <div class="card-image">
         <img src="{{(projectToDisplay | async)?.image}}">
-        <span class="card-title">{{(projectToDisplay | async)?.title}}</span>
       </div>
       <div class="card-content">
+        <span class="card-title">{{(projectToDisplay | async)?.title}}</span>
         <p>{{(projectToDisplay | async)?.description}}</p>
         <p>{{(projectToDisplay | async)?.languages}}</p>
       </div>
-      <div class="card-action">
-        <a href="#">{{(projectToDisplay | async)?.github}}</a>
-        <a href="#">{{(projectToDisplay | async)?.url}}</a>
+      <div class="card-action center">
+        <a href="{{(projectToDisplay | async)?.url}}" class="btn-floating waves-effect waves-light red" target="_blank"><i class="material-icons">launch</i></a>
+        <a href="{{(projectToDisplay | async)?.github}}" target="_blank" class="btn-floating waves-effect waves-light red"><img class="github center" src="assets/images/GitHub-Mark-32px.png"></a>
       </div>
     </div>
   </div>

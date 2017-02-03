@@ -10,7 +10,7 @@
     "title": "The San Juan Bautista Historical Society Website",
     "description": "This project is a redesign of an existing website for the San Juan Bautista Historical society. The goal of this project was to organize and update the code, while improving upon the initial design.",
     "image": "assets/images/sjb.png",
-    "languages": ["javascript", "php"],
+    "languages": ["javascript"],
     "github": "https://github.com/caitlinashtari/sanjuanbautista-hs",
     "url": "https://github.com/caitlinashtari"
   }, {
