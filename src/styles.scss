@@ -84,7 +84,7 @@ a.navLink {
 
 
 
-// select
+// radio button
 
 .radioFilter{
   padding-top: 120px;
@@ -95,6 +95,14 @@ a.navLink {
 }
 
 // content
+
+#divProjects,
+#divAbout,
+#divContact {
+  padding-top: 180px;
+  height: 1000px;
+  width: 100px;
+}
 
 #contactContainer {
   text-align: center;
