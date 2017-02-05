@@ -6,4 +6,5 @@ function upDate(){
 
 $(document).ready(function(){
   $("#year").html(upDate().toString());
+  $('select').material_select();
 });

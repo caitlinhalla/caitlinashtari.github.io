@@ -6,13 +6,12 @@ $marker: 'Permanent Marker', cursive;
 
 // body
 body {
-  background-image: url('assets/images/graffittiiii.jpg');
-  background-position: 0px 80px;
+  // background-image: url('assets/images/graffittiiii.jpg');
+  background-position: 0px 120px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 60%;
   margin-bottom: 0px;
   &:before{
-    content:"";
     display:block;
     position:fixed;
     width:100%;
@@ -87,10 +86,11 @@ a.navLink {
 
 // select
 
-.select{
-  padding-top: 20px;
-  select {
-    display: inline-block;
+.radioFilter{
+  padding-top: 120px;
+  text-align: center;
+  label{
+    padding-right: 50px;
   }
 }
 
