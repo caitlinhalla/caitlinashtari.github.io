@@ -36,12 +36,11 @@ nav{
 
 a.brand-logo {
   margin-left: 25px;
-  font-size: 3.5em;
+  font-size: 4.5em;
   font-family: $marker;
-  font-size: 6em;
   letter-spacing: 1px;
   width: 0;
-  height: .9em;
+  height: 1.06em;
   margin-top: -5px;
   transition: all .5s;
   &:visited, &:active {
@@ -49,7 +48,7 @@ a.brand-logo {
     color: $teal;
   }
   &:hover {
-    width: 642px;
+    width: 484px;
     text-decoration: none;
     border-bottom: 6px solid $teal;
     color: $teal;
