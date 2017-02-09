@@ -1,24 +1,27 @@
 {
   "projects": [{
-    "title": "Learning Playlist",
-    "description": "Currently, classroom instruction is one-size fits all. Whether in a public elementary school, university lecture, or code school, students are treated as a collective rather than as individuals with different learning styles, interests, and motivations. The goal of this project is to make the learning experience differentiated through a student-teacher created “playlist” or lesson list so that each student’s individual needs are met and every student excels. Includes options for teacher created lessons, or self-directed lessons.",
-    "image": "assets/images/learningplaylist.png",
-    "languages": ["ruby", "javascript"],
-    "github": "https://github.com/caitlinashtari/ruby-team-week-learning-playlist",
-    "url": "http://learning-playlist.herokuapp.com/"
+    "title": "EgoCheck",
+    "snippet": "Personal",
+    "description": "EgoCheck randomly generates quotes from the book Ego Is the Enemy by Ryan Holiday. The goal of this app is to help keep ego at bay because we all need a little EgoCheck every once in awhile.",
+    "image": "assets/images/egocheck.png",
+    "languages": ["javascript", "ruby"],
+    "github": "https://github.com/caitlinashtari/egochecker",
+    "url": "https://egocheck-7f94b.firebaseapp.com/"
   }, {
-    "title": "The San Juan Bautista Historical Society Website",
+    "title": "San Juan Bautista Historical Society",
+    "snippet": "Freelance",
     "description": "This project is a redesign of an existing website for the San Juan Bautista Historical society. The goal of this project was to organize and update the code, while improving upon the initial design.",
     "image": "assets/images/sjb.png",
     "languages": ["javascript"],
     "github": "https://github.com/caitlinashtari/sanjuanbautista-hs",
     "url": "https://github.com/caitlinashtari"
   }, {
-    "title": "EgoCheck",
-    "description": "EgoCheck randomly generates quotes from the book Ego Is the Enemy by Ryan Holiday. The goal of this app is to help keep ego at bay because we all need a little EgoCheck every once in awhile.",
-    "image": "assets/images/egocheck.png",
-    "languages": ["javascript", "ruby"],
-    "github": "https://github.com/caitlinashtari/egochecker",
-    "url": "https://egocheck-7f94b.firebaseapp.com/"
+    "title": "Learning Playlist",
+    "snippet": "Epicodus Team Week",
+    "description": "Currently, classroom instruction is one-size fits all. Whether in a public elementary school, university lecture, or code school, students are treated as a collective rather than as individuals with different learning styles, interests, and motivations. The goal of this project is to make the learning experience differentiated through a student-teacher created “playlist” or lesson list so that each student’s individual needs are met and every student excels. Includes options for teacher created lessons, or self-directed lessons.",
+    "image": "assets/images/learningplaylist.png",
+    "languages": ["ruby", "javascript"],
+    "github": "https://github.com/caitlinashtari/ruby-team-week-learning-playlist",
+    "url": "http://learning-playlist.herokuapp.com/"
   }]
 }

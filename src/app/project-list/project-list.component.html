@@ -1,39 +1,27 @@
-<!-- <div class="row select">
-  <div class="col s2 offset-s5">
-    <select (change)="onChange($event.target.value)">
-      <option value="allProjects" selected="selected">All Projects</option>
-      <option value="rubyProjects">Ruby Projects</option>
-      <option value="javaScriptProjects">JavaScript Projects</option>
-    </select>
-  </div>
-</div> -->
-
-<form class="radioFilter" (change)="onChange($event.target.value)">
-
-      <input class="with-gap" type="radio" name="group1" value="allProjects" checked="cehcked" id="all" />
-      <label for="all">All Languages</label>
-
-
-      <input class="with-gap" type="radio" name="group1" value="rubyProjects" id="ruby" />
-      <label for="ruby">Ruby</label>
-
-
-      <input class="with-gap" type="radio" name="group1" value="javaScriptProjects" id="javascript" />
-      <label for="javascript">JavaScript</label>
-
-</form>
-
 <div class="row">
-  <div class="col s12 m6 l4 projectList" *ngFor="let project of projects | async | language:filterByLanguage"  (click)="goToDetailPage(project)">
+  <div class="col s12">
+    <form class="radioFilter" (change)="onChange($event.target.value)">
+          <input class="with-gap" type="radio" name="group1" value="allProjects" checked="cehcked" id="all" />
+          <label for="all">All Languages</label>
+          <input class="with-gap" type="radio" name="group1" value="rubyProjects" id="ruby" />
+          <label for="ruby">Ruby</label>
+          <input class="with-gap" type="radio" name="group1" value="javaScriptProjects" id="javascript" />
+          <label for="javascript">JavaScript</label>
+    </form>
+  </div>
+</div>
+
+
+<div class="row projectList">
+  <div class="col s6 projectList" *ngFor="let project of projects | async | language:filterByLanguage" (click)="goToDetailPage(project)">
     <div class="card">
-      <div class="card-image">
-        <img src="{{project.image}}">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{project.image}}">
       </div>
       <div class="card-content">
-        <span class="card-title">{{project.title}}</span>
-        <p>{{project.description}}</p>
-        <p>{{project.languages}}</p>
+        <span class="card-title activator grey-text text-darken-4 center">{{project.title}}</span>
       </div>
     </div>
+
   </div>
 </div>

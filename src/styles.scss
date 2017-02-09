@@ -1,65 +1,60 @@
 $white: #fff;
 $black: #000;
 $teal: rgb(124, 205, 215);
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-$marker: 'Permanent Marker', cursive;
+// @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+// $marker: 'Permanent Marker', cursive;
+// @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Rock+Salt');
+// $cursive: 'Cedarville Cursive', cursive;
+$rock: 'Rock Salt', cursive;
+$raleway: 'Raleway', sans-serif;
 
 // body
 body {
-  // background-image: url('assets/images/graffittiiii.jpg');
-  background-position: 0px 120px;
-  background-repeat: no-repeat;
-  background-size: 60%;
-  margin-bottom: 0px;
-  &:before{
-    display:block;
-    position:fixed;
-    width:100%;
-    height:100%;
-    left:0;
-    top:0;
-    z-index:-1;
-  }
+  color: $black;
+  // margin-bottom: 0px;
+  // &:before{
+  //   display:block;
+  //   position:fixed;
+  //   width:100%;
+  //   height:100%;
+  //   left:0;
+  //   top:0;
+  //   z-index:-1;
+  // }
 }
 
 // navbar
 nav{
   background: $white;
+  // height: 120px;
   border: 0px;
   box-shadow: none;
-  height: 160px;
   .nav-wrapper {
-    padding-top: 90px;
+    // padding-top: 60px;
   }
 }
 
 a.brand-logo {
   margin-left: 25px;
-  font-size: 4.5em;
-  font-family: $marker;
-  letter-spacing: 1px;
-  width: 0;
+  font-size: 2.5em;
+  font-family: $rock;
   height: 1.06em;
-  margin-top: -5px;
   transition: all .5s;
+  color: $black;
   &:visited, &:active {
     text-decoration: none;
-    color: $teal;
   }
   &:hover {
-    width: 484px;
     text-decoration: none;
-    border-bottom: 6px solid $teal;
-    color: $teal;
   }
 }
 
 a.navLink {
-  font-size: 1.2em;
-  margin-top: 5px;
+  font-size: 1.5em;
   margin-right: 25px;
   transition: all .5s;
-  font-size: 2.5em;
+  font-family: $raleway;
   color: $black;
   &:hover, &:active, &:focus {
     background: none;
@@ -68,14 +63,12 @@ a.navLink {
   }
 }
 
-
 // headers
 .index {
   padding-top: 160px;
   padding-left: 30px;
   padding-bottom: 300px;
   color: $white;
-  font-family: $marker;
   font-size: 3em;
   .indexH1 {
     font-size: 2em;
@@ -83,26 +76,106 @@ a.navLink {
 }
 
 
-
 // radio button
+[type="radio"].with-gap:checked+label {
+  color: black;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+ border: 2px solid $teal;
+ color: $black;
+ background-color: $teal;
+}
+
+
+// [type="radio"].with-gap:checked+label{
+//   color: $black;
+//   [type="radio"].with-gap:checked+label:before{
+//     border: 2px solid $teal;
+//     color: $black;
+//   }
+//   [type="radio"].with-gap:checked+label:after {
+//     background-color: $teal;
+//   }
+// }
+
 
 .radioFilter{
   padding-top: 120px;
   text-align: center;
+  color: $black;
   label{
     padding-right: 50px;
   }
 }
 
 // content
-
-#divProjects,
-#divAbout,
-#divContact {
-  padding-top: 180px;
-  height: 1000px;
-  width: 100px;
+.indexRow {
+  padding-top: 100px;
+  h2, h3 {
+    text-align: center;
+  }
 }
+
+div.row.projectList,
+div.col.projectList.s6 {
+  margin:0px;
+  padding: 0px;
+}
+
+.about, .contact {
+  padding-top: 140px;
+}
+
+.card-title.activator {
+  font-family: $raleway;
+  font-weight: bold;
+}
+
+.projectList {
+  margin-bottom: 60px;
+}
+
+
+
+
+// #divProjects,
+// #divAbout,
+// #divContact {
+//   padding-top: 60px;
+//   height: 800px;
+//   text-align: center;
+// }
+//
+// #divProjects {
+//   // background-color: #f50057;
+//   margin-bottom: 150px;
+// }
+//
+// #divAbout {
+//   // background-color: #ffff00;
+//   margin-bottom: 150px;
+//
+// }
+//
+// #divContact {
+//   // background-color: #9c27b0;
+//   margin-bottom: 150px;
+//
+// }
+//
+// img#graffitti,
+// #yosemite,
+// #beer {
+//   width: 100%;
+//   height: 60%;
+// }
+//
+// #downButton1,
+// #downButton2,
+// #upButton {
+//   margin-top: 4px;
+// }
 
 #contactContainer {
   text-align: center;
@@ -123,12 +196,10 @@ a.navLink {
 }
 
 // footer
-.footer {
+footer.footer {
   text-align: center;
-  position: fixed;
+  color: $black;
+  margin-top: 80px;
   bottom:0px;
   margin-bottom:0px;
-  a{
-    color: $black;
-  }
 }
