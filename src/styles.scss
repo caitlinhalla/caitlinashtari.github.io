@@ -1,4 +1,6 @@
 $white: #fff;
+$instaWhite: rgb(250, 250, 250);
+$instaOff: rgb(255, 255, 255);
 $black: #000;
 $teal: rgb(124, 205, 215);
 // @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
@@ -8,45 +10,43 @@ $teal: rgb(124, 205, 215);
 // $cursive: 'Cedarville Cursive', cursive;
 $rock: 'Rock Salt', cursive;
 $raleway: 'Raleway', sans-serif;
+$typewriter: 'American Typewriter';
 
 // body
+
+
 body {
   color: $black;
-  // margin-bottom: 0px;
-  // &:before{
-  //   display:block;
-  //   position:fixed;
-  //   width:100%;
-  //   height:100%;
-  //   left:0;
-  //   top:0;
-  //   z-index:-1;
-  // }
+  background-color: $instaWhite;
+  // background-image: url('assets/images/graffittiiii.jpg');
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+}
+
+.main {
+  padding-top: 60px;
 }
 
 // navbar
 nav{
-  background: $white;
-  // height: 120px;
+  background: $instaOff;
   border: 0px;
   box-shadow: none;
-  .nav-wrapper {
-    // padding-top: 60px;
-  }
 }
 
 a.brand-logo {
   margin-left: 25px;
-  font-size: 2.5em;
-  font-family: $rock;
+  font-size: 3em;
+  font-family: $typewriter;
   height: 1.06em;
   transition: all .5s;
+  text-decoration: none;
   color: $black;
   &:visited, &:active {
     text-decoration: none;
   }
   &:hover {
-    text-decoration: none;
+    color: $teal;
   }
 }
 
@@ -65,7 +65,6 @@ a.navLink {
 
 // headers
 .index {
-  padding-top: 160px;
   padding-left: 30px;
   padding-bottom: 300px;
   color: $white;
@@ -79,29 +78,20 @@ a.navLink {
 // radio button
 [type="radio"].with-gap:checked+label {
   color: black;
+  font: $raleway;
+  font-size: 1em;
 }
 
-[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
- border: 2px solid $teal;
+ [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+ border: 1px solid $teal;
  color: $black;
  background-color: $teal;
+ font-family: $raleway;
+
 }
 
-
-// [type="radio"].with-gap:checked+label{
-//   color: $black;
-//   [type="radio"].with-gap:checked+label:before{
-//     border: 2px solid $teal;
-//     color: $black;
-//   }
-//   [type="radio"].with-gap:checked+label:after {
-//     background-color: $teal;
-//   }
-// }
-
-
 .radioFilter{
-  padding-top: 120px;
+  padding-top: 20px;
   text-align: center;
   color: $black;
   label{
@@ -110,21 +100,19 @@ a.navLink {
 }
 
 // content
-.indexRow {
-  padding-top: 100px;
-  h2, h3 {
+.indexRow h2, h3 {
     text-align: center;
   }
+
+div.card {
+  border: 10px solid $white;
 }
 
-div.row.projectList,
-div.col.projectList.s6 {
-  margin:0px;
-  padding: 0px;
-}
-
-.about, .contact {
-  padding-top: 140px;
+div.card-image {
+  height: 100%;
+  img {
+    height: 250px;
+  }
 }
 
 .card-title.activator {
@@ -132,57 +120,29 @@ div.col.projectList.s6 {
   font-weight: bold;
 }
 
-.projectList {
-  margin-bottom: 60px;
+
+#projectList {
+  margin-bottom: 90px;
 }
 
+#about{
 
+}
 
+#contact {
+  text-align: center;
+}
 
-// #divProjects,
-// #divAbout,
-// #divContact {
-//   padding-top: 60px;
-//   height: 800px;
-//   text-align: center;
-// }
-//
-// #divProjects {
-//   // background-color: #f50057;
-//   margin-bottom: 150px;
-// }
-//
-// #divAbout {
-//   // background-color: #ffff00;
-//   margin-bottom: 150px;
-//
-// }
-//
-// #divContact {
-//   // background-color: #9c27b0;
-//   margin-bottom: 150px;
-//
-// }
-//
-// img#graffitti,
-// #yosemite,
-// #beer {
-//   width: 100%;
-//   height: 60%;
-// }
-//
-// #downButton1,
-// #downButton2,
-// #upButton {
-//   margin-top: 4px;
-// }
-
-#contactContainer {
+.contactPage {
+  padding-top: 30px;
   text-align: center;
 }
 
 .detail, .project {
   padding-top: 20px;
+  .card-image img{
+    height: 100%;
+  }
   .btn-floating{
     display: inline-block;
     margin: 5px;
