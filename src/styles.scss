@@ -83,26 +83,15 @@ span.card-title {
   }
 }
 
-.row.aboutPage{
-  div.col.s6 {
-    .card {
-      position: center;
-    }
-  }
-}
-
-
 div.card {
   border: 10px solid $white;
   position: center;
 }
 
+
 div.card-image {
   img.activator {
     height: 250px;
-  }
-  img.contact {
-
   }
 }
 
