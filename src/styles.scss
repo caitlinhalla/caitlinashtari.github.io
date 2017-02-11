@@ -18,30 +18,27 @@ $typewriter: 'American Typewriter';
 body {
   color: $black;
   background-color: $instaWhite;
-  // background-image: url('assets/images/graffittiiii.jpg');
-  // background-repeat: no-repeat;
-  // background-size: 100%;
 }
 
-.main {
+.container {
   padding-top: 60px;
 }
 
 // navbar
 nav{
-  background: $instaOff;
+  background: $instaWhite;
   border: 0px;
   box-shadow: none;
 }
 
 a.brand-logo {
-  margin-left: 25px;
   font-size: 3em;
   font-family: $typewriter;
   height: 1.06em;
   transition: all .5s;
   text-decoration: none;
   color: $black;
+  text-align: center;
   &:visited, &:active {
     text-decoration: none;
   }
@@ -50,7 +47,7 @@ a.brand-logo {
   }
 }
 
-a.navLink {
+span.card-title {
   font-size: 1.5em;
   margin-right: 25px;
   transition: all .5s;
@@ -63,22 +60,10 @@ a.navLink {
   }
 }
 
-// headers
-.index {
-  padding-left: 30px;
-  padding-bottom: 300px;
-  color: $white;
-  font-size: 3em;
-  .indexH1 {
-    font-size: 2em;
-  }
-}
-
-
 // radio button
 [type="radio"].with-gap:checked+label {
   color: black;
-  font: $raleway;
+  font-family: $typewriter;
   font-size: 1em;
 }
 
@@ -99,19 +84,26 @@ a.navLink {
   }
 }
 
-// content
-.indexRow h2, h3 {
-    text-align: center;
-  }
-
 div.card {
   border: 10px solid $white;
 }
 
 div.card-image {
   height: 100%;
-  img {
+  img.activator {
     height: 250px;
+  }
+  img.contact {
+    height: 1%;
+    width: 100%;
+  }
+}
+
+.contactLink {
+  color: $teal;
+  &:hover, &:active, &:visited{
+    color: $teal;
+    text-decoration: none;
   }
 }
 
@@ -139,7 +131,6 @@ div.card-image {
       filter: invert(100%);
     }
   }
-
 }
 
 // footer

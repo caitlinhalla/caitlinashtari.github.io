@@ -13,13 +13,13 @@
 
 
 <div class="row projectList">
-  <div class="col s6 projectList" *ngFor="let project of projects | async | language:filterByLanguage" (click)="goToDetailPage(project)">
+  <div class="col s4 center" *ngFor="let project of projects | async | language:filterByLanguage" (click)="goToDetailPage(project)">
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="{{project.image}}">
+        <img class="activator proectList" src="{{project.image}}">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4 center">{{project.title}}</span>
+        <span class="card-title activator center">{{project.title}}</span>
       </div>
     </div>
 
