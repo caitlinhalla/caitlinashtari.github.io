@@ -49,7 +49,6 @@ a.brand-logo {
 
 span.card-title {
   font-size: 1.5em;
-  margin-right: 25px;
   transition: all .5s;
   font-family: $raleway;
   color: $black;
@@ -84,20 +83,33 @@ span.card-title {
   }
 }
 
+.row.aboutPage{
+  div.col.s6 {
+    .card {
+      position: center;
+    }
+  }
+}
+
+
 div.card {
   border: 10px solid $white;
+  position: center;
 }
 
 div.card-image {
-  height: 100%;
   img.activator {
     height: 250px;
   }
   img.contact {
-    height: 1%;
-    width: 100%;
+
   }
 }
+
+// .card-small {
+//   height: 1000px;;
+//   width: auto;
+// }
 
 .contactLink {
   color: $teal;
